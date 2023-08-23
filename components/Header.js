@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Link from "next/link";
 import Router from "next/router";
 import NProgress from "nprogress";
@@ -35,7 +34,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <Navbar color="light" light expand="md">
-        <Link legacyBehavior href="/">
+        <Link href="/">
           <NavLink className="font-weight-bold">{APP_NAME}</NavLink>
         </Link>
         <NavbarToggler onClick={toggle} />
@@ -43,8 +42,14 @@ const Header = () => {
           <Nav className="ml-auto" navbar>
             <React.Fragment>
               <NavItem>
-                <Link legacyBehavior href="/blogs">
+                <Link href="/blogs">
                   <NavLink>Blogs</NavLink>
+                </Link>
+              </NavItem>
+
+              <NavItem>
+                <Link href="/contact">
+                  <NavLink>Contact</NavLink>
                 </Link>
               </NavItem>
             </React.Fragment>
@@ -52,12 +57,12 @@ const Header = () => {
             {!isAuth() && (
               <React.Fragment>
                 <NavItem>
-                  <Link legacyBehavior href="/signin">
+                  <Link href="/signin">
                     <NavLink>Signin</NavLink>
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link legacyBehavior href="/signup">
+                  <Link href="/signup">
                     <NavLink>Signup</NavLink>
                   </Link>
                 </NavItem>
@@ -66,7 +71,7 @@ const Header = () => {
 
             {isAuth() && isAuth().role === 0 && (
               <NavItem>
-                <Link legacyBehavior href="/user">
+                <Link href="/user">
                   <NavLink>{`${isAuth().name}'s Dashboard`}</NavLink>
                 </Link>
               </NavItem>
@@ -74,7 +79,7 @@ const Header = () => {
 
             {isAuth() && isAuth().role === 1 && (
               <NavItem>
-                <Link legacyBehavior href="/admin">
+                <Link href="/admin">
                   <NavLink>{`${isAuth().name}'s Dashboard`}</NavLink>
                 </Link>
               </NavItem>
@@ -92,11 +97,9 @@ const Header = () => {
             )}
 
             <NavItem>
-              <Link legacyBehavior href="/user/crud/blog">
-                <NavLink className="btn btn-primary text-light">
-                  Write a blog
-                </NavLink>
-              </Link>
+              <a href="/user/crud/blog" className="btn btn-primary text-light">
+                Write a blog
+              </a>
             </NavItem>
           </Nav>
         </Collapse>
