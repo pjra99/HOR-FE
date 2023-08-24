@@ -19,19 +19,19 @@ const Blogs = ({
 }) => {
   const head = () => (
     <Head>
-      <title>Programming blogs | {APP_NAME}</title>
+      <title>Abhinav Dixit | {APP_NAME}</title>
       <meta
         name="description"
-        content="Programming blogs and tutorials on react node next vue php laravel and web developoment"
+        content="Programming blogs, Books Reviews, Travel Blogs"
       />
       <link rel="canonical" href={`${DOMAIN}${router.pathname}`} />
       <meta
         property="og:title"
-        content={`Latest web developoment tutorials | ${APP_NAME}`}
+        content={`Latest Blogs Related to Programming, Book Review, Travel and more | ${APP_NAME}`}
       />
       <meta
         property="og:description"
-        content="Programming blogs and tutorials on react node next vue php laravel and web developoment"
+        content="Latest Blogs Related to Programming, Book Review, Travel and more"
       />
       <meta property="og:type" content="webiste" />
       <meta property="og:url" content={`${DOMAIN}${router.pathname}`} />
@@ -124,7 +124,7 @@ const Blogs = ({
             <header>
               <div className="col-md-12 pt-3">
                 <h1 className="display-4 font-weight-bold text-center">
-                  Programming blogs and tutorials
+                  High on Ranking
                 </h1>
               </div>
               <section>
