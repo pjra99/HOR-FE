@@ -1,5 +1,4 @@
 import React from "react";
-
 import Layout from "../components/Layout";
 import Link from "next/link";
 
@@ -10,7 +9,7 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h1 className="display-4 font-weight-bold">High On Ranking</h1>
+              <h1 className="display-4 font-weight-bold text-red-300">High On Ranking</h1>
             </div>
           </div>
         </div>
@@ -18,7 +17,7 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center pt-4 pb-5">
-              <p className="lead">Hey! Thanks for visiting highonranking.com</p>
+              <p className="lead !text-red-700 ">Hey! Thanks for visiting highonranking.com</p>
             </div>
           </div>
         </div>

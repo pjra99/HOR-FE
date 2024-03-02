@@ -1,5 +1,14 @@
+
+@import "@tailwindcss/base";
+@import "@tailwindcss/utilities";
+@import "@tailwindcss/components";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #nprogress .bar {
-    height: 4px !important;
+    height: 4psx !important;
 }
 
 .ql-editor {
@@ -11,6 +20,7 @@
     max-height: 500px;
     object-fit: cover;
 }
+
 
 /**
  * card 
@@ -88,4 +98,11 @@
         13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04),
         16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
         19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+
+
+
+.test_class{
+    color: red !important;
 }
